@@ -1,0 +1,28 @@
+.scroll-indicator {
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: calc(100% - 5rem);
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-indicator::before {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    z-index: -1;
+    background: var(--color-e);
+}
+
+.scroll-content-container {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    overflow-y: auto;
+  
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+}
