@@ -39,7 +39,7 @@ const ScrollContentComponent = () => {
     }, []);
 
     return (
-        <div className="scroll-content-container"> 
+        <div className="scroll-content-container" style={{ backgroundImage: `linear-gradient(var(--fog-color), var(--fog-color)), url(./src/assets/image-from-rawpixel-id-13122505-png${theme === 'lightMode' ? '-black' : ''}.png)`}}> 
             <NavbarComponent activeSection={activeSection} />
 
             <AboutComponent />

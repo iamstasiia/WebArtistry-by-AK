@@ -18,9 +18,10 @@
 }
 
 .scroll-content-container {
-    width: calc(100% - 4rem);
-    height: calc(100% - 4rem);
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
     overflow-y: auto;
+    background-size: cover;
   
     &::-webkit-scrollbar {
       width: 0px;
