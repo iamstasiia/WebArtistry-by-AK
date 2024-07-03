@@ -6,6 +6,7 @@ const NetworkLinksComponent = () => {
                 <li>
                     <a href="https://github.com/iamstasiia" target="_blank">
                         <i className="fa-brands fa-github"></i>
+                        <span className="tooltip">https://github.com/iamstasiia</span>
                     </a>
                 </li>
                 {/* <li>
@@ -16,6 +17,7 @@ const NetworkLinksComponent = () => {
                 <li>
                     <a href="#">
                         <i className="fa-solid fa-envelope"></i>
+                        <span className="tooltip">a.a.khrypko@gmail.com</span>
                     </a>
                 </li>
             </ul>

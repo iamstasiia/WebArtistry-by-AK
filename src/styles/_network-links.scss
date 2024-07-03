@@ -10,10 +10,30 @@
       a {
         font-size: 2rem;
         color: var(--color-7);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 0.5rem;
         transition: all 0.5s;
+
         &:hover {
           color: var(--color-0);
           text-shadow: 0 0 0.25rem var(--color-5);
+
+          .tooltip {
+            visibility: visible;
+            opacity: 1;
+            width: 14.5rem;
+            padding-left: 1rem;
+          }
+        }
+
+        .tooltip {
+          visibility: hidden;
+          opacity: 0;
+          width: 0px;
+          font-size: 1rem;
+          transition: all 0.5s;
         }
       }
     }
