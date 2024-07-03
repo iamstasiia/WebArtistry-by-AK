@@ -1,0 +1,43 @@
+.lightMode{
+    --color-0: #000;
+    --color-1: #111;
+    --color-2: #222;
+    --color-3: #333;
+    --color-4: #444;
+    --color-5: #555;
+    --color-6: #666;
+    --color-7: #777;
+    --color-8: #888;
+    --color-9: #999;
+    --color-a: #aaa;
+    --color-b: #bbb;
+    --color-c: #ccc;
+    --color-d: #ddd;
+    --color-e: #eee;
+    --color-f: #fff;
+    --fog-color: rgba(238, 238, 238, 0.75);
+  }
+  
+  .darkMode{
+    --color-0: #fff;
+    --color-1: #eee;
+    --color-2: #ddd;
+    --color-3: #ccc;
+    --color-4: #bbb;
+    --color-5: #aaa;
+    --color-6: #999;
+    --color-7: #888;
+    --color-8: #777;
+    --color-9: #666;
+    --color-a: #555;
+    --color-b: #444;
+    --color-c: #333;
+    --color-d: #222;
+    --color-e: #111;
+    --color-f: #000;
+    --fog-color: rgba(17, 17, 17, 0.85);
+  }
+
+  .sans-serif {
+    font-family: 'Martel Sans', sans-serif;
+  }
