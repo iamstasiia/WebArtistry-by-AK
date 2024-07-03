@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const skillsArray = [
     { title: "HTML 5", icon: 'fa-brands fa-html5' },
     { title: "CSS 3", icon: 'fa-brands fa-css3-alt' },
@@ -14,6 +16,21 @@ const skillsArray = [
 ];
 
 const SkillsComponent = () => {
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const skills = document.querySelectorAll('.skills-list li');
+            const randomIndex = Math.floor(Math.random() * skillsArray.length);
+            const randomSkill = skills[randomIndex];
+            randomSkill.classList.add('active');
+
+            setTimeout(() => {
+                randomSkill.classList.remove('active');
+            }, 2000);
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section id="skills-container" className="skills-container">
@@ -40,6 +57,7 @@ const SkillsComponent = () => {
             <p className="background-text">My abilities</p>
         </section>
     );
+
 };
 
 export default SkillsComponent;
