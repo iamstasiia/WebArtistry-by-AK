@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react";
+import NavbarComponent from "./content/Navbar.comp.jsx";
 import AboutComponent from "./content/About.comp.jsx";
 import SkillsComponent from "./content/Skills.comp.jsx";
 import WorksComponent from "./content/Works.comp.jsx";
@@ -39,6 +40,8 @@ const ScrollContentComponent = () => {
 
     return (
         <div className="scroll-content-container"> 
+            <NavbarComponent activeSection={activeSection} />
+
             <AboutComponent />
             <SkillsComponent />
             <WorksComponent />
