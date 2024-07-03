@@ -13,10 +13,10 @@ font-family: 'Martel Sans', sans-serif;
   border: none;
   background: none;
   text-decoration: none;
+  font-weight: normal;
 }
 
 :root {
   font-size: 16px;
   font-family: 'Battambang', display;
-  font-weight: 300;
 }

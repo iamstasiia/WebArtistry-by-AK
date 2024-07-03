@@ -1,0 +1,20 @@
+.network-links {
+    margin-top: 2rem;
+    margin-left: 5rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+
+      a {
+        font-size: 2rem;
+        color: var(--color-7);
+        transition: all 0.5s;
+        &:hover {
+          color: var(--color-0);
+          text-shadow: 0 0 0.25rem var(--color-5);
+        }
+      }
+    }
+}
