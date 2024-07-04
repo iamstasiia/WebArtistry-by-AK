@@ -1,0 +1,18 @@
+.work-page-links {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+        padding: 6rem 3rem;
+
+        li a img {
+            width: 28rem;
+            object-fit: cover;
+            border-bottom: 1px solid var(--color-c);
+            border-right: 1px solid var(--color-c);
+            box-shadow: 4px 4px 4px var(--color-c);
+        }
+    }
+}

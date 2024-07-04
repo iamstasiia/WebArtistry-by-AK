@@ -2,6 +2,7 @@
 @import 'scroll';
 @import 'navbar';
 @import 'network-links';
+@import 'works';
 @import 'footer';
 
 .app-wrapper {
@@ -11,22 +12,21 @@
     color: var(--color-1);
 
     section {
-        min-height: calc(100vh - 9rem);
+        min-height: calc(100vh - 7rem);
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
+        border: 1px solid rgba(0, 0, 0, 0);
 
         .content {
-            position: absolute;
-            top: 0;
-            margin-top: 7.35rem;
+            margin-top: 7.5rem;
 
             h2 {
-                font-size: 4rem;
+                font-size: 3.5rem;
                 margin-left: 2.5rem;
                 span {
                   font-family: 'Whisper', handwriting;
-                  font-size: 10rem;
+                  font-size: 9rem;
                 }
             }
         }
@@ -37,11 +37,14 @@
           -ms-user-select: none;
           user-select: none;
           padding-top: 6rem;
-          font-size: 13vw;
-          line-height: 13vw;
+          font-size: 13rem;
+          line-height: 13rem;
           font-weight: bold;
           color: var(--color-f);
           font-family: 'Martel Sans', sans-serif;
+          position: absolute;
+          top: 0;
+          z-index: -1;
         }
 
         &.about-container {
@@ -51,7 +54,6 @@
                 h1 {
                     font-size: 4rem;
                     margin-left: 2.5rem;
-                    margin-top: 0.6rem;
                     span {
                       font-family: 'Whisper', handwriting;
                       font-size: 10rem;
@@ -133,10 +135,18 @@
 
         &.works-container {
             .content {
-                p {
-                    margin: 1rem 0 0 5rem;
-                    width: 48rem;
-                    color: var(--color-5);
+                .title-container {
+                    display: flex;
+                    align-items: baseline;
+
+                    h2 {
+                        text-wrap: nowrap;
+                    }
+
+                    p {
+                        color: var(--color-5);
+                        margin: 0 2rem;
+                    }
                 }
             }
         }

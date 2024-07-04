@@ -14,7 +14,7 @@ function FooterComponent() {
 
     return (
         <footer>
-            <small className="copyright">&copy;/2024 Anastasiia Khrypko</small>
+            <small className="copyright">&copy;/2024 Anastasiia Khrypko. This website is currently under construction.</small>
 
             <div className="theme-switcher-container">
                 <div className="theme-switcher">
