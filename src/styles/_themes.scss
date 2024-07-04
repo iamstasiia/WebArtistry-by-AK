@@ -20,9 +20,6 @@
     .scroll-indicator {
       .scroll-content-container {
         background-image: linear-gradient(var(--fog-color), var(--fog-color)), url(./../assets/back-darkMode.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
     }    
   }
@@ -49,9 +46,6 @@
     .scroll-indicator {
       .scroll-content-container {
         background-image: linear-gradient(var(--fog-color), var(--fog-color)), url(./../assets/back-lightMode.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
     } 
   }

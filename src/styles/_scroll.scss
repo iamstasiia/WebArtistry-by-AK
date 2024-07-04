@@ -20,6 +20,9 @@
 .scroll-content-container {
     width: calc(100% - 2rem);
     height: calc(100% - 2rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
     overflow-y: auto;
     z-index: -1;
   
