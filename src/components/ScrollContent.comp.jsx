@@ -9,7 +9,6 @@ import { ThemeContext } from "../contexts/Theme.context.jsx";
 const ScrollContentComponent = () => {
     const [activeSection, setActiveSection] = useState("");
     const {theme} = useContext(ThemeContext);
-    console.log(theme);
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -39,7 +38,8 @@ const ScrollContentComponent = () => {
     }, []);
 
     return (
-        <div className="scroll-content-container" style={{ backgroundImage: `linear-gradient(var(--fog-color), var(--fog-color)), url(./src/assets/image-from-rawpixel-id-13122505-png${theme === 'lightMode' ? '-black' : ''}.png)`}}> 
+        <div className="scroll-content-container"> 
+        {/* style={{ backgroundImage: `linear-gradient(var(--fog-color), var(--fog-color)), url(${theme === 'lightMode' ? lightFog : darkFog})`}} */}
             <NavbarComponent activeSection={activeSection} />
 
             <AboutComponent />
