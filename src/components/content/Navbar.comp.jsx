@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const NavbarComponent = ({ activeSection }) => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
     const handleSmoothScroll = (e) => {
         e.preventDefault();
         const targetId = e.currentTarget.getAttribute("href").substring(1);
@@ -7,50 +11,52 @@ const NavbarComponent = ({ activeSection }) => {
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: "smooth" });
         }
+        setMenuOpen(false);
     };
+
+    const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
     return (
         <nav>
-            <ul className="navbar-wrapper">
+            {/* hamburger */}
+            <button className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul className={`navbar-wrapper ${isMenuOpen ? "open" : ""}`}>
                 <li>
                     <a
                         href="#about-container"
-                        className={`${
-                            activeSection === "about-container" ? "active" : ""
-                        }`}
+                        className={`${activeSection === "about-container" ? "active" : ""}`}
                         data-back="about"
                         data-front="about"
                         onClick={handleSmoothScroll}
                     ></a>
                 </li>
-                <li className={activeSection === "skills-container" ? "active" : ""}>
+                <li>
                     <a
                         href="#skills-container"
-                        className={`${
-                            activeSection === "skills-container" ? "active" : ""
-                        }`}
+                        className={`${activeSection === "skills-container" ? "active" : ""}`}
                         data-back="skills"
                         data-front="skills"
                         onClick={handleSmoothScroll}
                     ></a>
                 </li>
-                <li className={activeSection === "works-container" ? "active" : ""}>
+                <li>
                     <a
                         href="#works-container"
-                        className={`${
-                            activeSection === "works-container" ? "active" : ""
-                        }`}
+                        className={`${activeSection === "works-container" ? "active" : ""}`}
                         data-back="works"
                         data-front="works"
                         onClick={handleSmoothScroll}
                     ></a>
                 </li>
-                <li className={activeSection === "contacts-container" ? "active" : ""}>
+                <li>
                     <a
                         href="#contacts-container"
-                        className={`${
-                            activeSection === "contacts-container" ? "active" : ""
-                        }`}
+                        className={`${activeSection === "contacts-container" ? "active" : ""}`}
                         data-back="contact"
                         data-front="contact"
                         onClick={handleSmoothScroll}
