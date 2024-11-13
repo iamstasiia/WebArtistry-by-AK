@@ -1,5 +1,4 @@
-.navbar-wrapper{
-    width: 100%;
+.navbar-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -7,60 +6,66 @@
     gap: 1rem;
     list-style: none;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1px;
+    right: 1px;
     z-index: 2;
-  
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    background: var(--color-e-25);
+
     a {
-      opacity: 1;
-      outline: 0;
-      line-height: 40px;
-      position: relative;
-      text-align: center;
-      letter-spacing: 2px;
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-  
-      &:hover, &.active{
-        &::after{
-          opacity: 1;
-          transform: translateY(0) rotateX(0);
-        }
-    
-        &::before{
-          opacity: 0;
-          transform: translateY(50%) rotateX(90deg);
-        }
-      }
-  
-      &::after{
-        top: 0;
-        left: 0;
-        opacity: 0;
-        width: 100%;
-        display: block;
-        transition: 0.5s;
-        position: absolute;
-        content: attr(data-back);
-        transform: translateY(-50%) rotateX(90deg);
-        color: var(--color-1);
-        background: var(--color-e);
-      }
-  
-      &::before{
-        top: 0;
-        left: 0;
         opacity: 1;
-        display: block;
-        padding: 0 30px;
-        line-height: 40px;
-        transition: 0.5s;
+        outline: 0;
+        line-height: 2rem;
         position: relative;
-        content: attr(data-front);
-        transform: translateY(0) rotateX(0);
-        color: var(--color-e);
-        background: var(--color-1);
-      }
+        text-align: center;
+        letter-spacing: 2px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+
+        &:hover,
+        &.active {
+            &::after {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+
+            &::before {
+                opacity: 0;
+                transform: translateY(50%) rotateX(90deg);
+            }
+        }
+
+        &::after {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            display: block;
+            transition: 0.5s;
+            position: absolute;
+            content: attr(data-back);
+            transform: translateY(-50%) rotateX(90deg);
+            color: var(--color-1);
+            background: var(--color-e);
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            display: block;
+            padding: 0 1.75rem;
+            line-height: 2.5rem;
+            line-height: 2rem;
+            transition: 0.5s;
+            position: relative;
+            content: attr(data-front);
+            transform: translateY(0) rotateX(0);
+            color: var(--color-e);
+            background: var(--color-1);
+        }
     }
-  }
+}
