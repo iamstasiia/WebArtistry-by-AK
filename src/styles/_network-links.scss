@@ -44,8 +44,27 @@
 
 @media screen and (max-width: 800px) {
     .network-links {
+        margin-left: 1rem;
+
         ul {
             flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .network-links {
+        ul {
+            a {
+                height: 5rem;
+
+                &:hover {
+                    .tooltip {
+                        width: 13rem;
+                        text-wrap: wrap;
+                    }
+                }
+            }
         }
     }
 }
