@@ -5,7 +5,7 @@ const NetworkLinksComponent = () => {
                 <li>
                     <a href="https://github.com/iamstasiia" target="_blank">
                         <i className="fa-brands fa-github"></i>
-                        <span className="tooltip">https://github.com/iamstasiia</span>
+                        <span className="tooltip">github.com/iamstasiia</span>
                     </a>
                 </li>
                 <li>
@@ -15,9 +15,9 @@ const NetworkLinksComponent = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="mailto:a.khrypko.work@gmail.com">
                         <i className="fa-solid fa-envelope"></i>
-                        <span className="tooltip">a.a.khrypko@gmail.com</span>
+                        <span className="tooltip">a.khrypko.work@gmail.com</span>
                     </a>
                 </li>
             </ul>
