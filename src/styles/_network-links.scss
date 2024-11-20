@@ -1,5 +1,4 @@
 .network-links {
-    margin-top: 2rem;
     margin-left: 5rem;
 
     ul {
@@ -14,8 +13,9 @@
             align-items: center;
             overflow: hidden;
             padding: 0.5rem;
-            transition: all 0.5s;
             padding-right: 4rem;
+            transition: all 0.5s;
+            word-spacing: -6px;
 
             &:hover {
                 color: var(--color-0);
@@ -27,6 +27,10 @@
                     width: 16rem;
                     padding-left: 1rem;
                     text-wrap: nowrap;
+                }
+
+                .first-link {
+                    width: 12rem;
                 }
             }
 
