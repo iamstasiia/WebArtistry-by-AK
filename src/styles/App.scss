@@ -19,14 +19,17 @@
         border: 1px solid rgba(0, 0, 0, 0);
 
         .content {
-            margin-top: 7.5rem;
+            margin-top: 10.25rem;
 
             h2 {
-                font-size: clamp(1rem, 10vh, 3.5rem);
+                font-size: clamp(2vh, 10vw, 3.5rem);
+                line-height: 125%;
                 margin-left: 2.5rem;
+                margin-bottom: 3rem;
+
                 span {
                     font-family: "Whisper", handwriting;
-                    font-size: 9rem;
+                    font-size: clamp(5vh, 20vw, 9rem);
                 }
             }
         }
@@ -53,7 +56,6 @@
                 margin-top: 10.5rem;
 
                 h1 {
-                    font-size: 4rem;
                     font-size: clamp(2vh, 10vw, 4rem);
                     line-height: 125%;
                     margin-top: clamp(1vh, 3vw, 3rem);
@@ -147,7 +149,7 @@
 
                     p {
                         color: var(--color-5);
-                        margin: 0 2rem;
+                        margin: 0 1rem;
                     }
                 }
             }
@@ -182,8 +184,7 @@
     .app-wrapper {
         section {
             .content {
-                // border: 1px solid red;
-                // margin-top: 5rem;
+                margin-top: 7.5rem;
             }
 
             &.about-container {
@@ -205,6 +206,26 @@
                 }
                 .background-text {
                     padding-top: 6.5rem;
+                }
+            }
+
+            &.skills-container {
+                .content {
+                    .skills-list {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            &.works-container {
+                .content {
+                    .title-container {
+                        flex-wrap: wrap;
+
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+                    }
                 }
             }
         }
