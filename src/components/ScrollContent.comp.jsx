@@ -4,11 +4,11 @@ import AboutComponent from "./content/About.comp.jsx";
 import SkillsComponent from "./content/Skills.comp.jsx";
 import WorksComponent from "./content/Works.comp.jsx";
 import ContactsComponent from "./content/Contacts.comp.jsx";
-import { ThemeContext } from "../contexts/Theme.context.jsx";
+// import { ThemeContext } from "../contexts/Theme.context.jsx";
 
 const ScrollContentComponent = () => {
     const [activeSection, setActiveSection] = useState("");
-    const {theme} = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -38,8 +38,7 @@ const ScrollContentComponent = () => {
     }, []);
 
     return (
-        <div className="scroll-content-container"> 
-        {/* style={{ backgroundImage: `linear-gradient(var(--fog-color), var(--fog-color)), url(${theme === 'lightMode' ? lightFog : darkFog})`}} */}
+        <div className="scroll-content-container">
             <NavbarComponent activeSection={activeSection} />
 
             <AboutComponent />
