@@ -1,14 +1,12 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import NavbarComponent from "./content/Navbar.comp.jsx";
 import AboutComponent from "./content/About.comp.jsx";
 import SkillsComponent from "./content/Skills.comp.jsx";
 import WorksComponent from "./content/Works.comp.jsx";
 import ContactsComponent from "./content/Contacts.comp.jsx";
-// import { ThemeContext } from "../contexts/Theme.context.jsx";
 
 const ScrollContentComponent = () => {
     const [activeSection, setActiveSection] = useState("");
-    // const { theme } = useContext(ThemeContext);
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
