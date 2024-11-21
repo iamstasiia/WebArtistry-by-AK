@@ -3,11 +3,11 @@ import { useState, useEffect, createContext } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('lightMode');
+    const [theme, setTheme] = useState("lightMode");
     const [font, setFont] = useState(false);
 
     const [scrollPercent, setScrollPercent] = useState(0);
-    const [backgroundStyle, setBackgroundStyle] = useState('var(--color-d');
+    const [backgroundStyle, setBackgroundStyle] = useState("var(--color-d)");
     const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
     const themeChanger = (newTheme) => {
@@ -15,22 +15,20 @@ export const ThemeProvider = ({ children }) => {
     };
 
     const fontChanger = () => {
-        setFont(prevFont => !prevFont);
+        setFont((prevFont) => !prevFont);
     };
 
     useEffect(() => {
-
         const scrollHandler = () => {
             const scrollableElement = document.querySelector(".scroll-content-container");
-            const maxHeight =
-                scrollableElement.scrollHeight - scrollableElement.clientHeight;
+            const maxHeight = scrollableElement.scrollHeight - scrollableElement.clientHeight;
             const scrollRatio = scrollableElement.scrollTop / maxHeight;
             const angle = scrollRatio * 360;
             const percent = Math.round(scrollRatio * 100);
 
             setScrollPercent(percent);
             setBackgroundStyle(
-                `conic-gradient(from 0deg, var(--color-1) 0%, var(--color-1) ${angle}deg, var(--color-d) ${angle}deg)`
+                `conic-gradient(from 0deg, var(--color-b) 0%, var(--color-1) ${angle}deg, var(--color-d) ${angle}deg)`
             );
 
             setShowScrollTopButton(scrollableElement.scrollTop > 300);
@@ -53,11 +51,16 @@ export const ThemeProvider = ({ children }) => {
         });
     };
 
-    const value = { theme, themeChanger, font, fontChanger, scrollPercent, backgroundStyle, showScrollTopButton, scrollToTop };
-    
-    return (
-        <ThemeContext.Provider value={value}>
-            {children}
-        </ThemeContext.Provider>
-    );
+    const value = {
+        theme,
+        themeChanger,
+        font,
+        fontChanger,
+        scrollPercent,
+        backgroundStyle,
+        showScrollTopButton,
+        scrollToTop,
+    };
+
+    return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 };

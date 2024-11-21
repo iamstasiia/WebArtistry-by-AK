@@ -10,9 +10,9 @@
 }
 
 .scroll-indicator::before {
-    content: '';
+    content: "";
     position: absolute;
-    inset: 1px;
+    inset: 0.1rem;
     z-index: -1;
     background: var(--color-e);
 }
@@ -25,8 +25,8 @@
     background-position: top;
     overflow-y: auto;
     z-index: -1;
-  
+
     &::-webkit-scrollbar {
-      width: 0px;
+        width: 0px;
     }
 }
