@@ -12,7 +12,7 @@
 .scroll-indicator::before {
     content: "";
     position: absolute;
-    inset: 0.1rem;
+    inset: 0.1rem; // scroll width
     z-index: -1;
     background: var(--color-e);
 }
