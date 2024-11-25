@@ -17,8 +17,9 @@
     --color-e-025: rgba(238, 238, 238, 0.25);
     --color-e-05: rgba(238, 238, 238, 0.5);
     --color-f: #fff;
+    --color-f-01: rgb(255, 255, 255, 0.1);
     --fog-color: rgba(238, 238, 238, 0.75);
-    --color-shadow: rgba(0, 0, 0, 0.2);
+    --color-shadow: rgba(51, 51, 51, 0.2);
 
     .scroll-indicator {
         .scroll-content-container {
@@ -46,8 +47,9 @@
     --color-e-025: rgba(21, 21, 21, 0.25);
     --color-e-05: rgba(21, 21, 21, 0.5);
     --color-f: #0a0a0a;
+    --color-f-01: rgb(10, 10, 10, 0.1);
     --fog-color: rgba(21, 21, 21, 0.85);
-    --color-shadow: rgba(255, 255, 255, 0.2);
+    --color-shadow: rgba(204, 204, 204, 0.2);
 
     .scroll-indicator {
         .scroll-content-container {
