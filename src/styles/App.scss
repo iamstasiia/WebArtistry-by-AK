@@ -79,6 +79,7 @@
 
                 p:nth-child(1) {
                     color: var(--color-5);
+                    font-weight: 300;
                     margin-left: 0.4rem;
                 }
 
@@ -86,6 +87,7 @@
                     max-width: 48rem;
                     margin: 1rem 1rem 0 5rem;
                     color: var(--color-5);
+                    font-weight: 300;
                     margin-bottom: 2rem;
                 }
             }
@@ -151,6 +153,7 @@
 
                     p {
                         color: var(--color-5);
+                        font-weight: 300;
                         margin: 0 1rem;
                     }
                 }
@@ -167,6 +170,10 @@
                 p {
                     padding: 0 1rem 0 5rem;
                     color: var(--color-5);
+
+                    &:nth-of-type(1) {
+                        font-weight: 300;
+                    }
                 }
             }
         }
