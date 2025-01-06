@@ -10,6 +10,7 @@
     min-height: 100vh;
     background: var(--color-e);
     color: var(--color-1);
+    position: relative;
 
     section {
         min-height: calc(100vh - 7rem);
