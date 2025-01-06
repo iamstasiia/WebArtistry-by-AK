@@ -30,3 +30,9 @@
         width: 0px;
     }
 }
+
+@media (max-width: 600px) {
+    .scroll-indicator::before {
+        inset: 1px; // scroll width
+    }
+}
