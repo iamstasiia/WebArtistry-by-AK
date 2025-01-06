@@ -264,6 +264,10 @@
         section {
             &.skills-container {
                 .content {
+                    .skills-list ul {
+                        gap: 1.5rem;
+                    }
+
                     h2 {
                         margin-left: 1rem;
                     }
