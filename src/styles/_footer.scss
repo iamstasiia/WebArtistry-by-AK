@@ -71,3 +71,9 @@ footer {
         opacity: 1;
     }
 }
+
+@media (max-width: 500px) {
+    footer .theme-switcher-container label {
+        font-size: smaller;
+    }
+}
