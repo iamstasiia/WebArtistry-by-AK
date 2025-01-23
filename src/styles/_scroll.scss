@@ -26,6 +26,7 @@
     background-repeat: no-repeat;
     background-position: top;
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: -1;
 
     &::-webkit-scrollbar {
