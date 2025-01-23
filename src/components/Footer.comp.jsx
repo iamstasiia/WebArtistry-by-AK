@@ -5,11 +5,11 @@ function FooterComponent() {
     const { theme, themeChanger, font, fontChanger, scrollPercent, showScrollTopButton, scrollToTop } =
         useContext(ThemeContext);
 
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer>
-            <small className="copyright">
-                &copy;/2024 Anastasiia Khrypko. This website is currently under construction.
-            </small>
+            <small className="copyright">&copy;/2024-{currentYear} Anastasiia Khrypko</small>
 
             <div className="theme-switcher-container">
                 <div className="theme-switcher">
