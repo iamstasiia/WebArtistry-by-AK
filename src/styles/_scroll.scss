@@ -15,6 +15,8 @@
     inset: 0.1rem; // scroll width
     z-index: -1;
     background: var(--color-e);
+    background-size: cover;
+    background-position: left;
 }
 
 .scroll-content-container {
@@ -34,5 +36,6 @@
 @media (max-width: 600px) {
     .scroll-indicator::before {
         inset: 1px; // scroll width
+        background-position: -6rem;
     }
 }
