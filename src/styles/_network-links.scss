@@ -46,28 +46,36 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 40rem) {
     .network-links {
         margin-left: 1rem;
 
         ul {
             flex-direction: column;
+            margin: 1.5rem 0;
+
+            a {
+                color: var(--color-0);
+            }
+
+            a .tooltip {
+                visibility: visible;
+                opacity: 1;
+                width: fit-content;
+                padding-left: 1rem;
+                text-decoration: underline;
+            }
         }
     }
 }
 
 @media screen and (max-width: 400px) {
     .network-links {
-        ul {
-            a {
-                height: 5rem;
-
-                &:hover {
-                    .tooltip {
-                        width: 13rem;
-                        text-wrap: wrap;
-                    }
-                }
+        ul a {
+            height: 5rem;
+            .tooltip {
+                width: 13rem;
+                text-wrap: wrap;
             }
         }
     }
