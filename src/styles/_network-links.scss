@@ -1,21 +1,42 @@
-.network-links {
-    margin-left: 5rem;
+.network-links ul {
+    margin-left: 1rem;
+    display: flex;
+    gap: 1.25rem;
 
-    ul {
+    li {
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
 
         a {
-            font-size: 2rem;
-            color: var(--color-7);
+            color: var(--color-0);
             display: flex;
             align-items: center;
-            overflow: hidden;
             padding: 0.5rem;
-            padding-right: 4rem;
+
+            i {
+                font-size: 2rem;
+                padding-right: 1rem;
+            }
+
+            .tooltip {
+                text-decoration: none;
+                visibility: hidden;
+                opacity: 0;
+                width: 0px;
+                overflow: hidden;
+                text-wrap: nowrap;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .network-links ul {
+        margin-left: 5rem;
+
+        li a {
+            color: var(--color-7);
             transition: all 0.5s;
-            word-spacing: -6px;
 
             &:hover {
                 color: var(--color-0);
@@ -25,7 +46,6 @@
                     visibility: visible;
                     opacity: 1;
                     width: 16rem;
-                    padding-left: 1rem;
                     text-wrap: nowrap;
                 }
 
@@ -33,44 +53,12 @@
                     width: 12rem;
                 }
             }
-
-            .tooltip {
-                visibility: hidden;
-                opacity: 0;
-                width: 0px;
-                font-size: 1rem;
-                transition: all 0.5s;
-                text-wrap: nowrap;
-            }
         }
     }
 }
 
-@media screen and (max-width: 40rem) {
-    .network-links {
-        margin-left: 1rem;
-
-        ul {
-            flex-direction: column;
-
-            a {
-                color: var(--color-0);
-            }
-
-            a .tooltip {
-                visibility: visible;
-                opacity: 1;
-                width: fit-content;
-                padding-left: 1rem;
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .network-links ul a .tooltip {
-        width: 13rem;
-        text-wrap: wrap;
+@media screen and (max-width: 25rem) {
+    .network-links ul {
+        justify-content: space-between;
     }
 }
