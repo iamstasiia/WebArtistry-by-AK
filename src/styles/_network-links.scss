@@ -52,7 +52,6 @@
 
         ul {
             flex-direction: column;
-            margin: 1.5rem 0;
 
             a {
                 color: var(--color-0);
@@ -70,13 +69,8 @@
 }
 
 @media screen and (max-width: 400px) {
-    .network-links {
-        ul a {
-            height: 5rem;
-            .tooltip {
-                width: 13rem;
-                text-wrap: wrap;
-            }
-        }
+    .network-links ul a .tooltip {
+        width: 13rem;
+        text-wrap: wrap;
     }
 }
